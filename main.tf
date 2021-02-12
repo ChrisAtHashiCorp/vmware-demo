@@ -48,13 +48,13 @@ resource "vsphere_virtual_machine" "test-vm" {
   clone {
     template_uuid = data.vsphere_virtual_machine.template.id
 
-    customize {
-      linux_options {
-        host_name = "cpolansky-test"
-        domain    = "hashicorp.com"
-      }
+  #  customize {
+  #    linux_options {
+  #      host_name = "cpolansky-test"
+  #      domain    = "hashicorp.com"
+  #    }
 
-      network_interface {}
-    }
+  #    network_interface {}
+  # }
   }
 }
