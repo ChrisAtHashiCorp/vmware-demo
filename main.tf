@@ -32,7 +32,7 @@ resource "vsphere_virtual_machine" "test-vm" {
   num_cpus = 1
   memory   = 4096
   guest_id = data.vsphere_virtual_machine.template.guest_id
-  firmware = "EFI"
+  firmware = "efi"
 
   network_interface {
     network_id = data.vsphere_network.network.id
