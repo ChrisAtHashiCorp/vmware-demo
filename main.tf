@@ -1,5 +1,5 @@
 resource "vsphere_virtual_machine" "test-vm" {
-  name             = "cpolansky-test"
+  name             = "cpolansky-test-mural"
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id     = data.vsphere_datastore.datastore.id
   folder           = "Demo"
